@@ -56,6 +56,11 @@ html {
 
   font-family: "louis_george_caferegularRegular";
   font-size: 1em;
+
+  /*Stop overscrolling from showing white background*/
+  background-color: #2e0140;
+  overscroll-behavior:contain ;
+
 }
 
 body {
@@ -137,6 +142,7 @@ a {
 .logo {
   height: 15em;
   width: 90%;
+  margin: auto;
 
   background-image: url("../images/logotype\ textwhite.png");
   background-size: contain;
@@ -653,8 +659,21 @@ body { font: 1em sans-serif;}
 .calendarWrapper {
   overflow-x: hidden;
   overflow-y: hidden;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
   max-width: 100%;
+}
+/* Make calendar screen size responsive */
+@media only screen and (min-width: 600px){
+  .calendarWrapper{
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 96%;
+  }
+}
+@media only screen and (max-width: 600px){
+  .calendarWrapper{
+    width: 100%;
+  }
 }
 
 .calendarInnerWrapper {
@@ -705,6 +724,14 @@ body { font: 1em sans-serif;}
     [end-row];
 }
 
+/* Mobile friendly formatting */
+@media only screen and (max-width: 600px){
+  .weekly-byhour {
+    grid-template-columns: 
+    [time] auto [thu] 1fr [fri] 1.5fr [fri2] 0.75fr [sat] 1fr [sun] 1fr [end-col];
+  }
+}
+
 /* GENERAL ITEM SETUP */
 .calendar li {
   /* background-color: var(--Cp2); */
@@ -733,7 +760,7 @@ li.event {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-wrap: nowrap;
+  /*text-wrap: nowrap;*/
   overflow: hidden;
   
   border-radius:5px;
@@ -765,7 +792,10 @@ li.event {
   font-family: "louis_george_caferegularLight";
   font-size: 0.9em;
   flex-grow: 1;
-  overflow:hidden;
+/*  overflow:hidden;*/
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  text-align: center;
 }
 
 /* DAY HEADINGS   row / col */
