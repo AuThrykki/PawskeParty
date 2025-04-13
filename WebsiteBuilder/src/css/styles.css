@@ -56,6 +56,9 @@ html {
 
   font-family: "louis_george_caferegularRegular";
   font-size: 1em;
+
+  /* background-color: #2e0140;
+  overscroll-behavior:contain; */
 }
 
 body {
@@ -143,6 +146,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   /* display: block; */
+  margin: auto;
 }
 
 .subtitle {
@@ -183,7 +187,7 @@ a {
   border: solid var(--CDetails) 2px;
   border-width: 1px 0px;
   background-color: rgba(0, 0, 0, 35%);
-  
+
   color: var(--mainFont);
   text-align: center;
 
@@ -653,8 +657,22 @@ body { font: 1em sans-serif;}
 .calendarWrapper {
   overflow-x: hidden;
   overflow-y: hidden;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   max-width: 100%;
+}
+
+/* Make calendar screen size responsive */
+@media only screen and (min-width: 600px){
+  .calendarWrapper{
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 96%;
+  }
+}
+@media only screen and (max-width: 600px){
+  .calendarWrapper{
+    width: 100%;
+  }
 }
 
 .calendarInnerWrapper {
@@ -676,33 +694,41 @@ body { font: 1em sans-serif;}
 }
 
 .weekly-byhour {
-  /* NAMED LINE NUMBERS (between tracks): 
+  /* NAMED LINE NUMBERS (between tracks):
         COLS: hour markers + 7 days
         ROWS: day markers + 24 hours */
-  grid-template-columns: 
+  grid-template-columns:
     [time] auto [thu] 1fr [fri] 1.5fr [fri2] 1fr [sat] 1fr [sun] 1fr [end-col];
   grid-template-rows:
     [day]  auto
     [h09]  auto
-    [h10]  auto 
-    [h11]  auto 
-    [h1130]  auto 
-    [h12]  auto 
-    [h13]  auto 
-    [h14]  auto 
-    [h15]  auto 
-    [h1530]  auto 
-    [h16]  auto 
-    [h17]  auto 
-    [h18]  auto 
-    [h19]  auto 
-    [h20]  auto 
-    [h21]  auto 
-    [h22]  auto 
-    [h23]  auto 
-    [h00]  auto 
-    [h01]  auto 
+    [h10]  auto
+    [h11]  auto
+    [h1130]  auto
+    [h12]  auto
+    [h13]  auto
+    [h14]  auto
+    [h15]  auto
+    [h1530]  auto
+    [h16]  auto
+    [h17]  auto
+    [h18]  auto
+    [h19]  auto
+    [h20]  auto
+    [h21]  auto
+    [h22]  auto
+    [h23]  auto
+    [h00]  auto
+    [h01]  auto
     [end-row];
+}
+
+/* Mobile friendly formatting */
+@media only screen and (max-width: 600px){
+  .weekly-byhour {
+    grid-template-columns:
+    [time] auto [thu] 1fr [fri] 1.5fr [fri2] 0.75fr [sat] 1fr [sun] 1fr [end-col];
+  }
 }
 
 /* GENERAL ITEM SETUP */
@@ -713,32 +739,31 @@ body { font: 1em sans-serif;}
 }
 
 /* ITEM TYPES */
-li.day, li.time, li.corner { 
-  background-color: var(--Cp2); 
+li.day, li.time, li.corner {
+  background-color: var(--Cp2);
   padding: 2px 2px;
 }
 li.corner {
   border-top-left-radius: 0.7em;
 }
-li.day { 
+li.day {
   text-align: center; }
-li.time { 
-  text-align: right; 
+li.time {
+  text-align: right;
   vertical-align: bottom; }
 
-li.event { 
-  height: 100%; 
-  
+li.event {
+  height: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-wrap: nowrap;
   overflow: hidden;
-  
+
   border-radius:5px;
   padding: 0px;
-  background-color: var(--animation1); 
+  background-color: var(--animation1);
 }
 
 .event:nth-child(3n+1) { background-color: var(--animation2); }
@@ -755,7 +780,7 @@ li.event {
 }
 .eventTitle {
   text-align: center;
-  font-family: "louis_george_caferegularbold";
+  font-family: "louis_george_caferegularbold";  
   font-size: 0.9em;
   display: flex;
   align-items: center;
@@ -766,6 +791,9 @@ li.event {
   font-size: 0.9em;
   flex-grow: 1;
   overflow:hidden;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  text-align: center;
 }
 
 /* DAY HEADINGS   row / col */
