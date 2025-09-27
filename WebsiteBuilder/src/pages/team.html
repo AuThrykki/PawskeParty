@@ -1,65 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-	<meta http-equiv="Pragma" content="no-cache">
-	<meta http-equiv="Expires" content="0">
-	<meta name="theme-color" content="#2e0140">
-
-	<link rel="icon" href="./images/logofill.png">
-
-	<title>🐾 PawskeParty 🐇</title>
-	<link rel="stylesheet" href="./css/styles.css">
-</head>
+{{-partial "head.html"-}}
 
 <body>
   <div class="app">
-    <div class="intro">
-
-    <a class="noDecoration" href="./">
-        <div class="logo">
-        </div>
-
-        <div class="subtitle blackTint">
-            The Oslo-based furry dance party
-        </div>
-        <!-- <div class="subtitle smallsubtitle blackTint">
-            Easter Friday April 18th - Quality Hotel Hasle Linie
-        </div> -->
-    </a>
-
-</div>
+    {{-partial "header.html"-}}
     <div id="content">
-      <nav class="navbar">
-    <a class="noDecoration blackTint" href="./index">Main Page</a>
-    <!-- <a class="noDecoration blackTint shinyButton" href="./tickets">Tickets</a> -->
-    <!-- <a class="noDecoration blackTint" href="./faq">FAQ</a> -->
-    <!-- <a class="noDecoration blackTint" href="./events">Events</a> -->
-    <!-- <a class="noDecoration blackTint" href="./applications">Applications</a> -->
-    <a class="noDecoration blackTint" href="./gallery">Gallery</a>
-    <a class="noDecoration blackTint" href="./team">Team</a>
-    <!-- <a class="noDecoration blackTint" href="./tosncoc">TOS & COC</a> -->
-</nav>
-
-<script>
-    const highlightActiveNavbarItem = () => {
-        const currentPath = "." + window.location.pathname;
-        const navItems = document.querySelectorAll('.navbar a');
-        console.log(":::" + currentPath)
-
-        navItems.forEach(item => {
-            const href = item.getAttribute('href');
-            if (href === currentPath) {
-                item.classList.add('active');
-            }
-        });
-    }
-    highlightActiveNavbarItem();
-</script>
+      {{-partial "navbar.html"-}}
 
       <div class="paragraph">
         <div class="h2">
@@ -124,25 +71,7 @@
       </div>
     </div>
 
-    <footer>
-    <div class="about">
-        Pawske party © 2023-2026 <br>
-        orgnr: 930 235 490
-    </div>
-
-    <div class="contactUs">
-        contact us at:<br />
-        <a href="mailto:pawskeparty@gmail.com">
-            pawskeparty@gmail.com
-          </a>
-
-          <div class="socialElement">
-            <a href="https://linktr.ee/pawskeparty">
-                Find our socials on Linktree<br>
-            </a>
-        </div>
-    </div>
-</footer>
+    {{-partial "footer.html"-}}
   </div>
 </body>
 
