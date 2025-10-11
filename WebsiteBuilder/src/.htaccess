@@ -1,3 +1,0 @@
-Options +FollowSymLinks +Multiviews
-RewriteEngine on
-ErrorDocument 404 http://www.pawskeparty.com/404.html  
