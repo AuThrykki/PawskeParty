@@ -240,7 +240,7 @@ Please change the parent <Route path="${Y}"> to <Route path="${Y==="/"?"*":`${Y}
 				min-h-9
 				max-h-9
 
-				`+(n.path===r?" border-2 font-cafeBold border-purple-400/50 ":" ")+(c===0&&n.path!=="/"?" fade-slide opacity-0 translate-y-1 invisible pointer-events-none max-w-0 border-0":"fade-slide-open opacity-100 translate-y-0 visible pointer-events-auto min-w-[25%] p-[0.2em] mr-1 ml-1"),children:v.jsx("span",{children:n.displayName})}),Pb=()=>{const r=$l().pathname;return v.jsxs(v.Fragment,{children:[v.jsx(Zb,{}),v.jsxs("div",{className:`
+				`+(n.path===r?" border-b-3 font-cafeBold border-b-Contrast1 ":" ")+(c===0&&n.path!=="/"?" fade-slide opacity-0 translate-y-1 invisible pointer-events-none max-w-0":"fade-slide-open opacity-100 translate-y-0 visible pointer-events-auto min-w-[25%] p-[0.2em] mr-1 ml-1"),children:v.jsx("span",{children:n.displayName})}),Pb=()=>{const r=$l().pathname;return v.jsxs(v.Fragment,{children:[v.jsx(Zb,{}),v.jsxs("div",{className:`
 					max-w-[1250px] m-auto min-w-[320px] min-h-screen
 
 					
