@@ -189,7 +189,7 @@ Please change the parent <Route path="${Y}"> to <Route path="${Y==="/"?"*":`${Y}
 		flex-col
 		gap-0.5
 		w-[33%]
-	`,h=` 
+	`,h=` 	
 		nav-label
 
 		w-[100%]
@@ -208,15 +208,13 @@ Please change the parent <Route path="${Y}"> to <Route path="${Y==="/"?"*":`${Y}
 		font-cafeBold 
 		border-b-Contrast1 
 		bg-Contrast1/20
-	`,g=r===1?"▽":"◁",x=r===1?y:p;const D=H=>H.filter(G=>G.online).map(G=>v.jsx(ga,{viewTransition:!0,to:G.path,className:h+(G.path===n?"  ":" ")+p+(r===0?` 
-						pointer-events-none 
-						-translate-y-3
-						sr-only
-						duration-250
+	`,g=r===1?"▽":"◁",x=r===1?y:p;const D=H=>H.filter(G=>G.online).map((G,Y)=>v.jsx(ga,{viewTransition:!0,to:G.path,style:{"--item-index":Y},className:h+(G.path===n?"  ":" ")+p+(r===0?` 
+							pointer-events-none 
+							sr-only
+							opacity-0
 						`:`
-						translate-y-0
-						visible
-						duration-250
+							pointer-events-auto
+							stagger-team
 						`),children:G.displayName}));let N=D([Be.tosncoc,Be.tickets,Be.applications,Be.ddapplication,Be.events,Be.tosncoc,Be.faq,Be.schedule,Be.hotel]),_=D([Be.team,Be.gallery,Be.socialLinks]);return v.jsx(v.Fragment,{children:v.jsxs("nav",{id:"NavBar",className:`
 				p-1 
 				rounded-xl 
