@@ -192,8 +192,6 @@ Please change the parent <Route path="${Y}"> to <Route path="${Y==="/"?"*":`${Y}
 	`,h=` 	
 		nav-label
 
-		w-[100%]
-
 		rounded-2xl
 
 		hover:bg-Contrast1
