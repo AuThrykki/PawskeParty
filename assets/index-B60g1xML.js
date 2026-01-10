@@ -199,7 +199,7 @@ Please change the parent <Route path="${Y}"> to <Route path="${Y==="/"?"*":`${Y}
 		font-cafeBold 
 		border-b-Contrast1 
 		bg-Contrast1/60
-	`,g=r===1?"▽":"◁",E=r===1?y:p;const D=H=>H.filter(G=>G.online).map((G,Y)=>v.jsx(nn,{viewTransition:!0,to:G.path,style:{"--item-index":Y},className:h+(G.path===n?m:p)+(r===0?` 
+	`,g=r===1?"▽":"◁",E=r===1?y:p;const D=H=>H.filter(G=>G.online&&G.visibleInNavigation).map((G,Y)=>v.jsx(nn,{viewTransition:!0,to:G.path,style:{"--item-index":Y},className:h+(G.path===n?m:p)+(r===0?` 
 							pointer-events-none 
 							sr-only
 							opacity-0
