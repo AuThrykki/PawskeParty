@@ -137,8 +137,6 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
 
 		sm:text-lg
 		`,NavLinkCss:`
-		nav-label
-
 		rounded-2xl
 
 		border-Contrast1
@@ -151,8 +149,6 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
 		transition
 		ease-in-out
 	`,NavSubLinkCss:`
-		nav-label
-
 		rounded-2xl
 
 		hover:border-Contrast1
@@ -163,6 +159,8 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
 
 		transition-all
 		duration-100
+
+		w-full
 
 		underline
 
@@ -205,7 +203,6 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
 	gap-0
 
 	bg-p3/30
-
 
 	min-w-30
 
@@ -467,7 +464,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
 					`:`
 					pointer-events-auto
 					stagger-team
-				`),children:u.displayName},"NavBarLink_"+n),D3=({navState:n,currentPath:u})=>c.jsxs("div",{className:Me.navBarSubCssTwo+" overflow-x-auto",children:[c.jsxs("div",{className:Me.NavBarSubColumn,children:[c.jsx(Y,{className:" text-center",children:"Venue"}),c.jsx(Qt,{index:1,pageInfo:ge.hotel,navState:n,currentPath:u}),c.jsx(Qt,{index:2,pageInfo:ge.gallery,navState:n,currentPath:u})]}),c.jsxs("div",{className:Me.NavBarSubColumn,children:[c.jsx(Y,{className:" text-center",children:"Convention"}),c.jsx(Qt,{index:2,pageInfo:ge.events,navState:n,currentPath:u}),c.jsx(Qt,{index:6,pageInfo:ge.venueMap,navState:n,currentPath:u,className:"w-40"}),c.jsx(Qt,{index:4,pageInfo:ge.socialLinks,navState:n,currentPath:u})]}),c.jsxs("div",{className:Me.NavBarSubColumn,children:[c.jsx(Y,{className:" text-center",children:"People"}),c.jsx(Qt,{index:3,pageInfo:ge.djs,navState:n,currentPath:u}),c.jsx(Qt,{index:4,pageInfo:ge.dealersden,navState:n,currentPath:u}),c.jsx(Qt,{index:5,pageInfo:ge.team,navState:n,currentPath:u})]}),c.jsxs("div",{className:Me.NavBarSubColumn,children:[c.jsx(Y,{className:" text-center",children:"Paperwork"}),c.jsx(Qt,{index:4,pageInfo:ge.faq,navState:n,currentPath:u}),c.jsx(Qt,{index:5,pageInfo:ge.codeOfConduct,navState:n,currentPath:u,className:"w-40"}),c.jsx(Qt,{index:6,pageInfo:ge.termsOfService,navState:n,currentPath:u,className:"w-40"})]})]}),A3=()=>{const u=Tl().pathname;return c.jsxs(c.Fragment,{children:[c.jsx(S3,{}),c.jsxs("div",{className:`
+				`),children:u.displayName},"NavBarLink_"+n),D3=({navState:n,currentPath:u})=>c.jsxs("div",{className:Me.navBarSubCssTwo+" overflow-x-auto",children:[c.jsxs("div",{className:Me.NavBarSubColumn,children:[c.jsx(Y,{className:" text-center",children:"Venue"}),c.jsx(Qt,{index:1,pageInfo:ge.hotel,navState:n,currentPath:u}),c.jsx(Qt,{index:2,pageInfo:ge.gallery,navState:n,currentPath:u})]}),c.jsxs("div",{className:Me.NavBarSubColumn,children:[c.jsx(Y,{className:" text-center",children:"Convention"}),c.jsx(Qt,{index:2,pageInfo:ge.events,navState:n,currentPath:u}),c.jsx(Qt,{index:3,pageInfo:ge.venueMap,navState:n,currentPath:u,className:"w-40"}),c.jsx(Qt,{index:4,pageInfo:ge.socialLinks,navState:n,currentPath:u})]}),c.jsxs("div",{className:Me.NavBarSubColumn,children:[c.jsx(Y,{className:" text-center",children:"People"}),c.jsx(Qt,{index:3,pageInfo:ge.djs,navState:n,currentPath:u}),c.jsx(Qt,{index:4,pageInfo:ge.dealersden,navState:n,currentPath:u}),c.jsx(Qt,{index:5,pageInfo:ge.team,navState:n,currentPath:u})]}),c.jsxs("div",{className:Me.NavBarSubColumn,children:[c.jsx(Y,{className:" text-center",children:"Paperwork"}),c.jsx(Qt,{index:4,pageInfo:ge.faq,navState:n,currentPath:u}),c.jsx(Qt,{index:5,pageInfo:ge.codeOfConduct,navState:n,currentPath:u,className:"w-40"}),c.jsx(Qt,{index:6,pageInfo:ge.termsOfService,navState:n,currentPath:u,className:"w-40"})]})]}),A3=()=>{const u=Tl().pathname;return c.jsxs(c.Fragment,{children:[c.jsx(S3,{}),c.jsxs("div",{className:`
 					max-w-[1250px] m-auto min-w-[320px] min-h-screen
 
 					
