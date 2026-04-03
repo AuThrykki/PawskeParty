@@ -245,7 +245,7 @@ Please change the parent <Route path="${Y}"> to <Route path="${Y==="/"?"*":`${Y}
 
 		flex
 		flex-row
-		justify-center
+		justify-stretch
 
 		w-full
 
