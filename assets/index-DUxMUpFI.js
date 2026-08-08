@@ -232,6 +232,9 @@ Please change the parent <Route path="${Y}"> to <Route path="${Y==="/"?"*":`${Y}
 
 		rounded-2xl
 
+		sm:text-base
+		text-sm
+
 		border-Contrast1
 		hover:border-l-5
 
@@ -274,7 +277,7 @@ Please change the parent <Route path="${Y}"> to <Route path="${Y==="/"?"*":`${Y}
 				items-start
 
 				text-lg 
-			`,children:[S.jsx("div",{className:f,children:S.jsx(tn,{to:Bt.home.path,viewTransition:!0,className:d+g+(n===""||n===Bt.home.path?v:" "),children:Bt.home.displayName})}),S.jsxs("div",{className:f,children:[S.jsxs("div",{className:d+" "+N+" grow ",onClick:c,children:[S.jsx("span",{children:"Event"}),S.jsx("span",{className:"text-sm ml-4",children:E})]}),B]}),S.jsxs("div",{className:f,children:[S.jsxs("div",{className:d+" "+N+" grow ",onClick:c,children:[S.jsx("span",{children:"Dealer's Den"}),S.jsx("span",{className:"text-sm ml-4",children:E})]}),G]}),S.jsxs("div",{className:f,children:[S.jsxs("div",{className:d+" "+N+" grow ",onClick:c,children:[S.jsx("span",{children:"About us"}),S.jsx("span",{className:"text-sm ml-4",children:E})]}),q]})]})})},e3=()=>{const r=Vl().pathname;return S.jsxs(S.Fragment,{children:[S.jsx(Wb,{}),S.jsxs("div",{className:`
+			`,children:[S.jsx("div",{className:f,children:S.jsx(tn,{to:Bt.home.path,viewTransition:!0,className:d+g+(n===""||n===Bt.home.path?v:" "),children:Bt.home.displayName})}),S.jsxs("div",{className:f,children:[S.jsx("div",{className:d+" "+N+" grow ",onClick:c,children:S.jsx("span",{children:"Event"})}),B]}),S.jsxs("div",{className:f,children:[S.jsx("div",{className:d+" "+N+" grow ",onClick:c,children:S.jsx("span",{children:"Dealer's Den"})}),G]}),S.jsxs("div",{className:f,children:[S.jsxs("div",{className:d+" "+N+" grow ",onClick:c,children:[S.jsx("span",{children:"About us"}),S.jsx("span",{className:"text-sm ml-4",children:E})]}),q]})]})})},e3=()=>{const r=Vl().pathname;return S.jsxs(S.Fragment,{children:[S.jsx(Wb,{}),S.jsxs("div",{className:`
 					max-w-[1250px] m-auto min-w-[320px] min-h-screen
 
 					
