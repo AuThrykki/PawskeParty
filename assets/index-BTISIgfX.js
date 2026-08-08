@@ -232,9 +232,6 @@ Please change the parent <Route path="${Y}"> to <Route path="${Y==="/"?"*":`${Y}
 
 		rounded-2xl
 
-		sm:text-base
-		text-sm
-
 		border-Contrast1
 		hover:border-l-5
 
